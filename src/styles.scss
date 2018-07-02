@@ -1,1 +1,262 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+Theme Name: Melon Soda
+Description: Melon Soda
+Author: Andrew Magnaye
+Author URI: http://www.aguerrillam.com
+Tags:
+*/
+
+/**
+*--------------------------
+*Table of Contents
+*--------------------------
+*1.0 Variables
+*2.0 Navigation
+*3.0 Fonts
+*4.0 Section: Design Philosophy
+*5.0 Section: Portfolio
+*6.0 Section: About
+*/
+
+/*== VARIABLES ==*/
+$headcolor: #9893DA;
+$navtext: #000;
+$active-nav: underline;
+$basefont: "Helvetica", serif;
+$portfolio-background: #DBD1C8;
+$site-white: #fff;
+$portfolio-cta-text: #9893DA;
+$section-grey: #eeeeee;
+$portfolio-hook: #4B3B47;
+$header-color: #FBD2D7;
+$site-yellow: #FED766;
+
+
+/*== Global Styles ==*/
+h1{
+  font-size:2.5rem;
+  color: $headcolor;
+}
+
+h2{
+  font-size:2.25rem;
+}
+
+h3{
+  font-size:2rem;
+  color: $headcolor;
+}
+
+h4{
+  font-size:1.75rem;
+  color: $headcolor;
+}
+
+h5{
+  font-size:1.5rem;
+  color: $headcolor;
+}
+
+h6{
+  font-size:1.25rem;
+  color: $headcolor;
+}
+
+p{
+  font-weight:300;
+  font-size:1rem;
+  line-height: 148%;
+}
+
+@media (max-width: 480px){
+  html{
+    font-size:16px;
+  }
+  .content-push{
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 480px){
+  html{
+    font-size:16px;
+  }
+  .content-push{
+    padding-top: 55px;
+  }
+}
+
+@media (min-width: 768px){
+  html{
+    font-size:16px;
+  }
+  .content-push{
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 992px){
+  html{
+    font-size:18px;
+  }
+  .content-push{
+    padding-top: 70px;
+  }
+}
+
+@media  (min-width: 1200px){
+  html{
+    font-size:20px;
+  }
+  .content-push{
+    padding-top: 80px;
+  }
+}
+
+
+/** NAVIGATION **/
+
+header{
+  .navbar, .jumbotron{
+    background: $header-color;
+  }
+
+  .nav-link, .navbar-brand{
+    color: $navtext;
+  }
+
+  .active{
+    text-decoration: $active-nav;
+  }
+
+  .jumbotron{
+    h1{
+      font-size: 8em;
+      color: $headcolor;
+    }
+    b{
+      color:$headcolor;
+    }
+  }
+}
+
+
+
+/** NAVIGATION END **/
+
+/** Design philosophy **/
+
+#design_philosophy{
+  img{
+    max-width: 50%;
+  }
+  p{
+    text-align: center;
+  }
+}
+
+/** Design philosophy end **/
+
+/** Portfolio **/
+#portfolio-background{
+  background: $section-grey;
+  padding-bottom: 20px;
+}
+
+#portfolio{
+
+  h1{
+    padding-top: 35px;
+  }
+  .web-card{
+    background: $site-white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: 0 6px 13px rgba(0,0,0,0.12);
+    transition: box-shadow 0.2s ease-in 0s;
+    &:hover{
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.56);
+    }
+
+
+    .web-caption{
+      padding: 10px 20px;
+    }
+    .web-btn{
+      color: $portfolio-cta-text;
+      text-decoration: none;
+      padding-top: 5px;
+      border: none;
+      transition: color 0.4s ease-out 0s;
+      &:hover, &:active, &:focus{
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .column-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.section-grey{
+  background: $section-grey;
+}
+
+.section, .section-grey{
+  padding: 20px 0;
+}
+
+#inner-portfolio{
+  img{
+    max-height: 300px;
+    display: block;
+    margin: auto;
+  }
+
+  .section-grey{
+    background: $section-grey;
+  }
+
+  .section, .section-grey{
+    padding: 20px 0;
+  }
+}
+
+#portfolio-hook{
+  padding-bottom: 20px;
+  background: $portfolio-hook;
+  color: $site-white;
+  width: 100%;
+}
+
+
+
+#tagline{
+  color: $portfolio-cta-text;
+}
+
+
+/** PORTFOLIO END **/
+
+
+/** About **/
+#about-hook{
+  background: $portfolio-hook;
+  color: $site-white;
+}
+
+#bio, #bio2{
+  padding-top: 15px;
+}
+
+/** About end **/
+
